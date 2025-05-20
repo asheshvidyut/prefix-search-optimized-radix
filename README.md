@@ -1,4 +1,4 @@
-## Prefix Search Optimized Radix Tree
+## Prefix Iteration Optimized Mutable Radix Tree
 
 This repo introduces some modification in Mutable Radix Trees to make prefix iteration faster and memory efficient.
 
