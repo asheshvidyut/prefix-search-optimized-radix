@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func runBehcmkarSeekPrefixImmutableRadixTreeWithWords(wordCount int, b *testing.B, char int) {
+func runBenchmarkSeekPrefixImmutableRadixTreeWithWords(wordCount int, b *testing.B, char int) {
 	words := make([]string, 0)
 	words = append(words, "")
 	words = generateTestWords(words, wordCount)
@@ -53,833 +53,833 @@ func runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(wordCount int, b *t
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Chara(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('a'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('a'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charb(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('b'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('b'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charc(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('c'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('c'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Chard(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('d'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('d'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Chare(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('e'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('e'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charf(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('f'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('f'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charg(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('g'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('g'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charh(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('h'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('h'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Chari(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('i'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('i'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charj(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('j'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('j'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Chark(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('k'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('k'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charl(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('l'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('l'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charm(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('m'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('m'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charn(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('n'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('n'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charo(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('o'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('o'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charp(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('p'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('p'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charq(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('q'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('q'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charr(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('r'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('r'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Chars(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('s'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('s'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Chart(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('t'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('t'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charu(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('u'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('u'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charv(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('v'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('v'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charw(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('w'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('w'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charx(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('x'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('x'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Chary(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('y'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('y'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10Charz(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('z'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10, b, int('z'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharAUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('A'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharaUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('a'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharBUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('B'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharbUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('b'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharCUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('C'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharcUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('c'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharDUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('D'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10ChardUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('d'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharEUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('E'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10ChareUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('e'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharFUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('F'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharfUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('f'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharGUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('G'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10ChargUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('g'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharHUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('H'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharhUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('h'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharIUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('I'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10ChariUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('i'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharJUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('J'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharjUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('j'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharKUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('K'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharkUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('k'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharLUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('L'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharlUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('l'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharMUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('M'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharmUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('m'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharNUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('N'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharnUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('n'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharOUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('O'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharoUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('o'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharPUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('P'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharpUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('p'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharQUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('Q'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharqUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('q'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharRUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('R'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharrUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('r'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharSUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('S'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharsUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('s'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharTUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('T'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10ChartUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('t'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharUUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('U'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharuUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('u'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharVUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('V'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharvUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('v'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharWUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('W'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharwUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('w'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharXUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('X'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharxUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('x'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharYUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('Y'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharyUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('y'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10CharZUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10, b, int('Z'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10CharzUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10, b, int('z'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Chara(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('a'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('a'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charb(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('b'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('b'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charc(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('c'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('c'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Chard(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('d'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('d'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Chare(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('e'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('e'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charf(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('f'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('f'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charg(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('g'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('g'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charh(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('h'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('h'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Chari(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('i'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('i'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charj(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('j'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('j'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Chark(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('k'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('k'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charl(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('l'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('l'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charm(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('m'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('m'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charn(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('n'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('n'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charo(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('o'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('o'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charp(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('p'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('p'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charq(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('q'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('q'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charr(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('r'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('r'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Chars(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('s'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('s'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Chart(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('t'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('t'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charu(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('u'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('u'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charv(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('v'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('v'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charw(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('w'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('w'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charx(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('x'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('x'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Chary(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('y'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('y'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree100Charz(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('z'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(100, b, int('z'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharAUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('A'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharaUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('a'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharBUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('B'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharbUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('b'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharCUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('C'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharcUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('c'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharDUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('D'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100ChardUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('d'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharEUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('E'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100ChareUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('e'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharFUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('F'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharfUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('f'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharGUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('G'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100ChargUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('g'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharHUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('H'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharhUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('h'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharIUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('I'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100ChariUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('i'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharJUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('J'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharjUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('j'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharKUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('K'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharkUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('k'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharLUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('L'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharlUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('l'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharMUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('M'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharmUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('m'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharNUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('N'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharnUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('n'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharOUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('O'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharoUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('o'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharPUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('P'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharpUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('p'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharQUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('Q'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharqUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('q'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharRUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('R'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharrUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('r'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharSUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('S'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharsUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('s'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharTUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('T'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100ChartUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('t'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharUUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('U'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharuUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('u'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharVUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('V'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharvUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('v'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharWUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('W'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharwUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('w'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharXUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('X'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharxUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('x'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharYUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('Y'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharyUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('y'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree100CharZUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(100, b, int('Z'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree100CharzUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(100, b, int('z'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Chara(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('a'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('a'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charb(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('b'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('b'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charc(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('c'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('c'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Chard(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('d'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('d'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Chare(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('e'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('e'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charf(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('f'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('f'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charg(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('g'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('g'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charh(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('h'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('h'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Chari(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('i'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('i'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charj(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('j'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('j'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Chark(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('k'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('k'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charl(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('l'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('l'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charm(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('m'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('m'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charn(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('n'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('n'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charo(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('o'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('o'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charp(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('p'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('p'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charq(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('q'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('q'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charr(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('r'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('r'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Chars(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('s'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('s'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Chart(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('t'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('t'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charu(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('u'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('u'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charv(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('v'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('v'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charw(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('w'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('w'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charx(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('x'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('x'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Chary(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('y'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('y'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree1000Charz(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('z'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(1000, b, int('z'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharAUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('A'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharaUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('a'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharBUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('B'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharbUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('b'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharCUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('C'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharcUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('c'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharDUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('D'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000ChardUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('d'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharEUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('E'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000ChareUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('e'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharFUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('F'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharfUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('f'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharGUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('G'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000ChargUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('g'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharHUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('H'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharhUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('h'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharIUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('I'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000ChariUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('i'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharJUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('J'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharjUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('j'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharKUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('K'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharkUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('k'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharLUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('L'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharlUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('l'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharMUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('M'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharmUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('m'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharNUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('N'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharnUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('n'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharOUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('O'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharoUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('o'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharPUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('P'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharpUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('p'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharQUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('Q'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharqUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('q'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharRUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('R'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharrUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('r'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharSUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('S'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharsUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('s'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharTUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('T'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000ChartUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('t'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharUUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('U'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharuUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('u'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharVUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('V'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharvUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('v'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharWUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('W'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharwUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('w'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharXUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('X'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharxUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('x'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharYUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('Y'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharyUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('y'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree1000CharZUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(1000, b, int('Z'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree1000CharzUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(1000, b, int('z'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Chara(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('a'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('a'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charb(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('b'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('b'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charc(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('c'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('c'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Chard(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('d'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('d'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Chare(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('e'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('e'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charf(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('f'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('f'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charg(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('g'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('g'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charh(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('h'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('h'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Chari(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('i'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('i'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charj(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('j'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('j'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Chark(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('k'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('k'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charl(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('l'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('l'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charm(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('m'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('m'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charn(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('n'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('n'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charo(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('o'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('o'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charp(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('p'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('p'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charq(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('q'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('q'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charr(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('r'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('r'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Chars(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('s'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('s'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Chart(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('t'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('t'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charu(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('u'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('u'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charv(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('v'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('v'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charw(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('w'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('w'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charx(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('x'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('x'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Chary(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('y'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('y'))
 }
 
 func BenchmarkSeekPrefixImmutableRadixTree10000Charz(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('z'))
+	runBenchmarkSeekPrefixImmutableRadixTreeWithWords(10000, b, int('z'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharAUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('A'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharaUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('a'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharBUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('B'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharbUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('b'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharCUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('C'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharcUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('c'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharDUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('D'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000ChardUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('d'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharEUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('E'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000ChareUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('e'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharFUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('F'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharfUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('f'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharGUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('G'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000ChargUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('g'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharHUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('H'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharhUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('h'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharIUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('I'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000ChariUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('i'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharJUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('J'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharjUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('j'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharKUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('K'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharkUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('k'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharLUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('L'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharlUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('l'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharMUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('M'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharmUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('m'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharNUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('N'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharnUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('n'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharOUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('O'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharoUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('o'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharPUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('P'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharpUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('p'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharQUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('Q'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharqUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('q'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharRUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('R'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharrUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('r'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharSUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('S'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharsUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('s'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharTUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('T'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000ChartUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('t'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharUUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('U'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharuUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('u'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharVUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('V'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharvUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('v'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharWUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('W'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharwUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('w'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharXUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('X'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharxUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('x'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharYUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('Y'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharyUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('y'))
 }
 
-func BenchmarkSeekPrefixImmutableRadixTree10000CharZUpper(b *testing.B) {
-	runBehcmkarSeekPrefixImmutableRadixTreeWithWords(10000, b, int('Z'))
+func BenchmarkSeekPrefixPrefixOptimizedRadixTree10000CharzUpper(b *testing.B) {
+	runBenchmarkSeekPrefixPrefixOptimizedRadixTreeWithWords(10000, b, int('z'))
 }
