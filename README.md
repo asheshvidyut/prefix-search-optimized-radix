@@ -1,3 +1,4 @@
+```
 goos: linux
 goarch: amd64
 pkg: prefix-search-optimized-radix
@@ -220,3 +221,4 @@ BenchmarkSeekPrefixPrefixOptimizedRadixTree10000Chary-24    	  341826	      3286
 BenchmarkSeekPrefixPrefixOptimizedRadixTree10000Charz-24    	  355557	      3358 ns/op	       8 B/op	       1 allocs/op
 PASS
 ok  	prefix-search-optimized-radix	291.558s
+```
