@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-const MAX_WORDS = 1000
+const MAX_WORDS = 100000
 
 // generateTestWords generates a list of words with common prefixes
 func generateTestWords(words []string) []string {
