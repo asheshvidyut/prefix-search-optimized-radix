@@ -98,11 +98,3 @@ func BenchmarkIteratorImmutableRadixTree10000(b *testing.B) {
 func BenchmarkIteratorPrefixOptimizedRadixTree10000(b *testing.B) {
 	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(10000, b)
 }
-
-func BenchmarkIteratorImmutableRadixTree100000(b *testing.B) {
-	runBehcmkarIteratorImmutableRadixTreeWithWords(100000, b)
-}
-
-func BenchmarkIteratorPrefixOptimizedRadixTree100000(b *testing.B) {
-	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(100000, b)
-}
