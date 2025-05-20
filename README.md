@@ -1,9 +1,9 @@
-### Prefix Search Optimized Radix Tree
+## Prefix Search Optimized Radix Tree
 
 This repo introduces some modification in Mutable Radix Trees to make prefix iteration faster  
 and memory efficient
 
-## Benchmarking Results
+### Benchmarking Results
 
 Results for - https://github.com/asheshvidyut/prefix-search-optimized-radix/blob/main/benchmark_iterator_test.go
 ```
