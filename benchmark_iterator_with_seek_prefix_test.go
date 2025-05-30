@@ -108,9 +108,9 @@ func Benchmark_TestSeekPrefix(b *testing.B) {
 	}
 
 	b.Run("ImmutableRadixTree_SeekPrefix", func(b *testing.B) {
-		b.ResetTimer()                    // Reset timer before the loop, after tree setup
-		prefix := generateRandomPrefix(3) // Generate new random prefix for each iteration
+		b.ResetTimer() // Reset timer before the loop, after tree setup
 		for i := 0; i < b.N; i++ {
+			prefix := generateRandomPrefix(3) // Generate new random prefix for each iteration
 			iter := immutableTree.Root().Iterator()
 			iter.SeekPrefix([]byte(prefix))
 			for {
@@ -123,9 +123,9 @@ func Benchmark_TestSeekPrefix(b *testing.B) {
 	})
 
 	b.Run("PrefixOptimizedRadixTree_SeekPrefix", func(b *testing.B) {
-		b.ResetTimer()                    // Reset timer before the loop, after tree setup
-		prefix := generateRandomPrefix(3) // Generate new random prefix for each iteration
+		b.ResetTimer() // Reset timer before the loop, after tree setup
 		for i := 0; i < b.N; i++ {
+			prefix := generateRandomPrefix(3) // Generate new random prefix for each iteration
 			iter := psoTree.Root().Iterator()
 			iter.SeekPrefix([]byte(prefix))
 			for {
