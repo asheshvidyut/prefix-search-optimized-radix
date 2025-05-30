@@ -67,42 +67,42 @@ func runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(wordCount int, b *tes
 	}
 }
 
-func BenchmarkIteratorImmutableRadixTree10(b *testing.B) {
-	runBehcmkarIteratorImmutableRadixTreeWithWords(10, b)
-}
+// func BenchmarkIteratorImmutableRadixTree10(b *testing.B) {
+// 	runBehcmkarIteratorImmutableRadixTreeWithWords(10, b)
+// }
 
-func BenchmarkIteratorPrefixOptimizedRadixTree10(b *testing.B) {
-	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(10, b)
-}
+// func BenchmarkIteratorPrefixOptimizedRadixTree10(b *testing.B) {
+// 	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(10, b)
+// }
 
-func BenchmarkIteratorImmutableRadixTree100(b *testing.B) {
-	runBehcmkarIteratorImmutableRadixTreeWithWords(100, b)
-}
+// func BenchmarkIteratorImmutableRadixTree100(b *testing.B) {
+// 	runBehcmkarIteratorImmutableRadixTreeWithWords(100, b)
+// }
 
-func BenchmarkIteratorPrefixOptimizedRadixTree100(b *testing.B) {
-	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(100, b)
-}
+// func BenchmarkIteratorPrefixOptimizedRadixTree100(b *testing.B) {
+// 	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(100, b)
+// }
 
-func BenchmarkIteratorImmutableRadixTree1000(b *testing.B) {
-	runBehcmkarIteratorImmutableRadixTreeWithWords(1000, b)
-}
+// func BenchmarkIteratorImmutableRadixTree1000(b *testing.B) {
+// 	runBehcmkarIteratorImmutableRadixTreeWithWords(1000, b)
+// }
 
-func BenchmarkIteratorPrefixOptimizedRadixTree1000(b *testing.B) {
-	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(1000, b)
-}
+// func BenchmarkIteratorPrefixOptimizedRadixTree1000(b *testing.B) {
+// 	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(1000, b)
+// }
 
-func BenchmarkIteratorImmutableRadixTree10000(b *testing.B) {
-	runBehcmkarIteratorImmutableRadixTreeWithWords(10000, b)
-}
+// func BenchmarkIteratorImmutableRadixTree10000(b *testing.B) {
+// 	runBehcmkarIteratorImmutableRadixTreeWithWords(10000, b)
+// }
 
-func BenchmarkIteratorPrefixOptimizedRadixTree10000(b *testing.B) {
-	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(10000, b)
-}
+// func BenchmarkIteratorPrefixOptimizedRadixTree10000(b *testing.B) {
+// 	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(10000, b)
+// }
 
-func BenchmarkIteratorImmutableRadixTree100000(b *testing.B) {
-	runBehcmkarIteratorImmutableRadixTreeWithWords(100000, b)
-}
+// func BenchmarkIteratorImmutableRadixTree100000(b *testing.B) {
+// 	runBehcmkarIteratorImmutableRadixTreeWithWords(100000, b)
+// }
 
-func BenchmarkIteratorPrefixOptimizedRadixTree100000(b *testing.B) {
-	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(100000, b)
-}
+// func BenchmarkIteratorPrefixOptimizedRadixTree100000(b *testing.B) {
+// 	runBenchmarkIteratorPrefixOptimizedRadixTreeWithWords(100000, b)
+// }

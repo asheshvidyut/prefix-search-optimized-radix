@@ -24,13 +24,13 @@ func (i *Iterator) SeekPrefixWatch(prefix []byte) (watch <-chan struct{}) {
 	i.key = prefix
 	n := i.node
 	search := prefix
-	i.iterLeafNode, _ = i.node.MinimumLeaf()
+	i.iterLeafNode = i.node.minLeaf
 	i.iterCounter = i.node.leavesInSubtree
 	for {
 		// Check for key exhaustion
 		if len(search) == 0 {
 			i.node = n
-			i.iterLeafNode, _ = i.node.MinimumLeaf()
+			i.iterLeafNode = i.node.minLeaf
 			i.iterCounter = i.node.leavesInSubtree
 			return
 		}
@@ -50,7 +50,7 @@ func (i *Iterator) SeekPrefixWatch(prefix []byte) (watch <-chan struct{}) {
 
 		} else if bytes.HasPrefix(n.prefix, search) {
 			i.node = n
-			i.iterLeafNode, _ = i.node.MinimumLeaf()
+			i.iterLeafNode = i.node.minLeaf
 			i.iterCounter = i.node.leavesInSubtree
 			return
 		} else {
