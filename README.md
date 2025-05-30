@@ -24,7 +24,7 @@ BenchmarkIteratorPrefixOptimizedRadixTree10000-24           	    9662	    117438
 
 ```
 
-#### Percentage Improvement
+#### Percentage Improvement (Speed)
 | Test Case      | Immutable (ns/op) | Optimized (ns/op) | % Improvement |
 | -------------- | ----------------- | ----------------- | ------------- |
 | Iterator 10    | 183.1             | 30.47             | **83.36%**    |
@@ -32,6 +32,13 @@ BenchmarkIteratorPrefixOptimizedRadixTree10000-24           	    9662	    117438
 | Iterator 1000  | 180,995           | 120,672           | **33.37%**    |
 | Iterator 10000 | 181,655           | 117,438           | **35.34%**    |
 
+#### Percentage Improvement (Memory)
+| Test Case      | Immutable (B/op) | Optimized (B/op) | Reduction | % Improvement |
+| -------------- | ---------------- | ---------------- | --------- | ------------- |
+| Iterator 10    | 40               | 0                | 40 B      | **100%**      |
+| Iterator 100   | 88               | 0                | 88 B      | **100%**      |
+| Iterator 1000  | 184              | 0                | 184 B     | **100%**      |
+| Iterator 10000 | 184              | 0                | 184 B     | **100%**      |
 
 Iterating on prefix with Charx -> x is changing for each test
 
