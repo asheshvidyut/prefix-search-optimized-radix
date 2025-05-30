@@ -43,6 +43,16 @@ BenchmarkIteratorPrefixOptimizedRadixTree10000-24           	    9662	    117438
 ### Iterating on prefix with Charx -> x is changing for each test
 
 Results for - https://github.com/asheshvidyut/prefix-search-optimized-radix/blob/main/benchmark_iterator_with_seek_prefix_test.go
+
+#### Percentage Improvement
+| Test Case       | Average Time (ns/op) Improvement | Average Allocations (allocs/op) Improvement |
+|-----------------|----------------------------------|---------------------------------------------|
+| Iterator 10     | **43.53%**                       | **50%**                                     |                                
+| Iterator 100    | **68.86%**                       | **50%**                                     |
+| Iterator 1000   | **21.56%**	                      | **66.67%**                                  | 
+| Iterator 10000  | **21.78%**	                      | **66.67%**                                  |
+
+
 ```
 BenchmarkSeekPrefixImmutableRadixTree10Chara-24             	15237057	        77.50 ns/op	      40 B/op	       2 allocs/op
 BenchmarkSeekPrefixImmutableRadixTree10Charb-24             	15061152	        76.44 ns/op	      40 B/op	       2 allocs/op
