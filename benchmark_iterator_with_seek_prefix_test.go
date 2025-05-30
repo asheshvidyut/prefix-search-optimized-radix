@@ -107,11 +107,10 @@ func Benchmark_TestSeekPrefix(b *testing.B) {
 		psoTree, _, _ = psoTree.Insert([]byte(word), nil)
 	}
 
-	prefix := generateRandomPrefix(3) // Generate new random prefix for each iteration
-
 	b.Run("ImmutableRadixTree_SeekPrefix", func(b *testing.B) {
 		resultsImmutable := make([]string, 0)
-		b.ResetTimer() // Reset timer before the loop, after tree setup
+		b.ResetTimer()                    // Reset timer before the loop, after tree setup
+		prefix := generateRandomPrefix(3) // Generate new random prefix for each iteration
 		for i := 0; i < b.N; i++ {
 			iter := immutableTree.Root().Iterator()
 			iter.SeekPrefix([]byte(prefix))
@@ -127,7 +126,8 @@ func Benchmark_TestSeekPrefix(b *testing.B) {
 
 	b.Run("PrefixOptimizedRadixTree_SeekPrefix", func(b *testing.B) {
 		resultsOptimized := make([]string, 0)
-		b.ResetTimer() // Reset timer before the loop, after tree setup
+		b.ResetTimer()                    // Reset timer before the loop, after tree setup
+		prefix := generateRandomPrefix(3) // Generate new random prefix for each iteration
 		for i := 0; i < b.N; i++ {
 			iter := psoTree.Root().Iterator()
 			iter.SeekPrefix([]byte(prefix))
