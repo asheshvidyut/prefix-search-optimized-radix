@@ -13,32 +13,31 @@ goos: linux
 goarch: amd64
 pkg: prefix-search-optimized-radix
 cpu: AMD EPYC 7B12
-BenchmarkIteratorImmutableRadixTree10-24                    	 6680989	       183.1 ns/op	      40 B/op	       2 allocs/op
-BenchmarkIteratorPrefixOptimizedRadixTree10-24              	37727648	        30.47 ns/op	       0 B/op	       0 allocs/op
-BenchmarkIteratorImmutableRadixTree100-24                   	  329053	      3607 ns/op	      88 B/op	       3 allocs/op
-BenchmarkIteratorPrefixOptimizedRadixTree100-24             	  709500	      1661 ns/op	       0 B/op	       0 allocs/op
-BenchmarkIteratorImmutableRadixTree1000-24                  	    6451	    180995 ns/op	     184 B/op	       4 allocs/op
-BenchmarkIteratorPrefixOptimizedRadixTree1000-24            	    9609	    120672 ns/op	       0 B/op	       0 allocs/op
-BenchmarkIteratorImmutableRadixTree10000-24                 	    5900	    181655 ns/op	     184 B/op	       4 allocs/op
-BenchmarkIteratorPrefixOptimizedRadixTree10000-24           	    9662	    117438 ns/op	       0 B/op	       0 allocs/op
-
+BenchmarkIteratorImmutableRadixTree10-24                    	 6561556	       184.3 ns/op	      40 B/op	       2 allocs/op
+BenchmarkIteratorPrefixOptimizedRadixTree10-24              	39115611	        29.47 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIteratorImmutableRadixTree100-24                   	  310989	      3748 ns/op	      88 B/op	       3 allocs/op
+BenchmarkIteratorPrefixOptimizedRadixTree100-24             	  723337	      1629 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIteratorImmutableRadixTree1000-24                  	    6063	    182730 ns/op	     184 B/op	       4 allocs/op
+BenchmarkIteratorPrefixOptimizedRadixTree1000-24            	   10000	    117636 ns/op	       0 B/op	       0 allocs/op
+BenchmarkIteratorImmutableRadixTree10000-24                 	    6105	    183487 ns/op	     184 B/op	       4 allocs/op
+BenchmarkIteratorPrefixOptimizedRadixTree10000-24           	   10000	    116628 ns/op	       0 B/op	       0 allocs/op
 ```
 
 #### Percentage Improvement (Speed)
-| Test Case  | Immutable (ns/op) | Optimized (ns/op) | % Improvement |
-|------------| ----------------- | ----------------- | ------------- |
-| Keys 10    | 183.1             | 30.47             | **83.36%**    |
-| Keys 100   | 3607              | 1661              | **53.96%**    |
-| Keys 1000  | 180,995           | 120,672           | **33.37%**    |
-| Keys 10000 | 181,655           | 117,438           | **35.34%**    |
+| Test Case  | Immutable (ns/op) | Optimized (ns/op) | Reduction (ns) | % Improvement |
+|------------| ----------------- | ----------------- | -------------- | ------------- |
+| Keys 10    | 184.3             | 29.47             | 154.83         | 83.90%        |
+| Keys 100   | 3748              | 1629              | 2119           | 56.54%        |
+| Keys 1000  | 182730            | 117636            | 65094          | 35.62%        |
+| Keys 10000 | 183487            | 116628            | 66859          | 36.44%        |
 
 #### Percentage Improvement (Memory)
-| Test Case  | Immutable (B/op) | Optimized (B/op) | Reduction | % Improvement |
-|------------| ---------------- | ---------------- | --------- | ------------- |
-| Keys 10    | 40               | 0                | 40 B      | **100%**      |
-| Keys 100   | 88               | 0                | 88 B      | **100%**      |
-| Keys 1000  | 184              | 0                | 184 B     | **100%**      |
-| Keys 10000 | 184              | 0                | 184 B     | **100%**      |
+| Test Case  | Immutable (B/op) | Optimized (B/op) | Reduction (B) | % Improvement |
+|------------| ---------------- | ---------------- | ------------- | ------------- |
+| Keys 10    | 40               | 0                | 40            | 100%          |
+| Keys 100   | 88               | 0                | 88            | 100%          |
+| Keys 1000  | 184              | 0                | 184           | 100%          |
+| Keys 10000 | 184              | 0                | 184           | 100%          |
 
 ### Iterating on prefix with Charx -> x is changing for each test (when prefix is x)
 
