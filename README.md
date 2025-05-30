@@ -6,7 +6,7 @@ This repo introduces some modification in Mutable Radix Trees to make prefix ite
 
 Results for - https://github.com/asheshvidyut/prefix-search-optimized-radix/blob/main/benchmark_iterator_test.go
 
-Iterating on all keys in Radix Tree
+#### Iterating on all keys in Radix Tree
 
 ```
 goos: linux
@@ -23,6 +23,15 @@ BenchmarkIteratorImmutableRadixTree10000-24                 	    5900	    181655
 BenchmarkIteratorPrefixOptimizedRadixTree10000-24           	    9662	    117438 ns/op	       0 B/op	       0 allocs/op
 
 ```
+
+#### Percentage Improvement
+| Test Case      | Immutable (ns/op) | Optimized (ns/op) | % Improvement |
+| -------------- | ----------------- | ----------------- | ------------- |
+| Iterator 10    | 183.1             | 30.47             | **83.36%**    |
+| Iterator 100   | 3607              | 1661              | **53.96%**    |
+| Iterator 1000  | 180,995           | 120,672           | **33.37%**    |
+| Iterator 10000 | 181,655           | 117,438           | **35.34%**    |
+
 
 Iterating on prefix with Charx -> x is changing for each test
 
