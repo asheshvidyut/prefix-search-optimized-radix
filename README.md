@@ -6,7 +6,7 @@ This repo introduces some modification in Mutable Radix Trees to make prefix ite
 
 Results for - https://github.com/asheshvidyut/prefix-search-optimized-radix/blob/main/benchmark_iterator_test.go
 
-### Iterating on all keys in Radix Tree
+### Iterating on all keys in Radix Tree (when prefix is "")
 
 ```
 goos: linux
@@ -25,33 +25,32 @@ BenchmarkIteratorPrefixOptimizedRadixTree10000-24           	    9662	    117438
 ```
 
 #### Percentage Improvement (Speed)
-| Test Case      | Immutable (ns/op) | Optimized (ns/op) | % Improvement |
-| -------------- | ----------------- | ----------------- | ------------- |
-| Iterator 10    | 183.1             | 30.47             | **83.36%**    |
-| Iterator 100   | 3607              | 1661              | **53.96%**    |
-| Iterator 1000  | 180,995           | 120,672           | **33.37%**    |
-| Iterator 10000 | 181,655           | 117,438           | **35.34%**    |
+| Test Case  | Immutable (ns/op) | Optimized (ns/op) | % Improvement |
+|------------| ----------------- | ----------------- | ------------- |
+| Keys 10    | 183.1             | 30.47             | **83.36%**    |
+| Keys 100   | 3607              | 1661              | **53.96%**    |
+| Keys 1000  | 180,995           | 120,672           | **33.37%**    |
+| Keys 10000 | 181,655           | 117,438           | **35.34%**    |
 
 #### Percentage Improvement (Memory)
-| Test Case      | Immutable (B/op) | Optimized (B/op) | Reduction | % Improvement |
-| -------------- | ---------------- | ---------------- | --------- | ------------- |
-| Iterator 10    | 40               | 0                | 40 B      | **100%**      |
-| Iterator 100   | 88               | 0                | 88 B      | **100%**      |
-| Iterator 1000  | 184              | 0                | 184 B     | **100%**      |
-| Iterator 10000 | 184              | 0                | 184 B     | **100%**      |
+| Test Case  | Immutable (B/op) | Optimized (B/op) | Reduction | % Improvement |
+|------------| ---------------- | ---------------- | --------- | ------------- |
+| Keys 10    | 40               | 0                | 40 B      | **100%**      |
+| Keys 100   | 88               | 0                | 88 B      | **100%**      |
+| Keys 1000  | 184              | 0                | 184 B     | **100%**      |
+| Keys 10000 | 184              | 0                | 184 B     | **100%**      |
 
-### Iterating on prefix with Charx -> x is changing for each test
+### Iterating on prefix with Charx -> x is changing for each test (when prefix is x)
 
 Results for - https://github.com/asheshvidyut/prefix-search-optimized-radix/blob/main/benchmark_iterator_with_seek_prefix_test.go
 
 #### Percentage Improvement
-| Test Case       | Average Time (ns/op) Improvement | Average Allocations (allocs/op) Improvement |
-|-----------------|----------------------------------|---------------------------------------------|
-| Iterator 10     | **43.53%**                       | **50%**                                     |                                
-| Iterator 100    | **68.86%**                       | **50%**                                     |
-| Iterator 1000   | **21.56%**	                      | **66.67%**                                  | 
-| Iterator 10000  | **21.78%**	                      | **66.67%**                                  |
-
+| Test Case  | Average Time (ns/op) Improvement | Average Allocations (allocs/op) Improvement |
+|------------|----------------------------------|---------------------------------------------|
+| Keys 10    | **43.53%**                       | **50%**                                     |                                
+| Keys 100   | **68.86%**                       | **50%**                                     |
+| Keys 1000  | **21.56%**	                      | **66.67%**                                  | 
+| Keys 10000 | **21.78%**	                      | **66.67%**                                  |
 
 ```
 BenchmarkSeekPrefixImmutableRadixTree10Chara-24             	15237057	        77.50 ns/op	      40 B/op	       2 allocs/op
