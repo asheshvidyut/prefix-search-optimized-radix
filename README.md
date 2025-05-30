@@ -40,3 +40,18 @@ BenchmarkIteratorPrefixOptimizedRadixTree10000-24           	   10000	    116628
 | Keys 1000   | 184              | 0                | 184           | 100.00%               | 4                     | 0                     | 4                  | 100.00%                |
 | Keys 10000  | 184              | 0                | 184           | 100.00%               | 4                     | 0                     | 4                  | 100.00%                |
 | Keys 100000 | 184              | 0                | 184           | 100.00%               | 4                     | 0                     | 4                  | 100.00%                |
+
+### Iterating on keys with common prefix
+
+```
+Benchmark_TestSeekPrefix/ImmutableRadixTree_SeekPrefix-24         	  105685	     15320 ns/op	    3854 B/op	      39 allocs/op
+Benchmark_TestSeekPrefix/PrefixOptimizedRadixTree_SeekPrefix-24   	  149748	     10279 ns/op	    2857 B/op	      37 allocs/op
+```
+
+#### Percentage Improvement
+
+| Metric    | Immutable Radix Tree | Prefix Optimized Radix Tree | Difference | % Improvement (Reduction) |
+| --------- | -------------------- | --------------------------- | ---------- | ------------------------- |
+| ns/op     | 15320                | 10279                       | 5041       | 32.90%                    |
+| B/op      | 3854                 | 2857                        | 997        | 25.87%                    |
+| allocs/op | 39                   | 37                          | 2          | 5.13%                     |
